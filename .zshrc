@@ -30,6 +30,9 @@ setopt PUSHD_SILENT         # Do not print the directory stack after pushd or po
 # Autosuggestions
 source "$ZPLUGS/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
+# nvm
+source "$ZPLUGS/zsh-nvm/zsh-nvm.plugin.zsh"
+
 # Aliases
 source "$XDG_CONFIG_HOME/.aliases"
 

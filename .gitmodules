@@ -7,3 +7,6 @@
 [submodule "plugins/zsh-autosuggestions"]
 	path = plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "plugins/zsh-nvm"]
+	path = plugins/zsh-nvm
+	url = https://github.com/lukechilds/zsh-nvm.git
