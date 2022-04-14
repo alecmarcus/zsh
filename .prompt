@@ -12,11 +12,11 @@ precmd_functions+=( vcs_info )
 setopt prompt_subst
 # %b: branch
 # %u: unstaged changes
-zstyle ':vcs_info:git:*' formats '%F{5}(%b%u)%f '
+zstyle ':vcs_info:git:*' formats '%F{138}%r @ %b%u%a%f '
 # this makes %u work, but also the prompt is clearly slower in git dirs when this is on
 zstyle ':vcs_info:*' check-for-changes true
 # what string to use for %u when there are unstaged changes
-zstyle ':vcs_info:*' unstagedstr '*'
+zstyle ':vcs_info:*' unstagedstr '%F{33}•%f'
 # vcs_info supports multiple version control systems, but I need just git
 zstyle ':vcs_info:*' enable git
 
@@ -28,6 +28,6 @@ zstyle ':vcs_info:*' enable git
 # %(..): conditional expression (see docs)
 # %?: exit code of last process
 # %n@%m: user@host
-PROMPT='%B${vcs_info_msg_0_}%F{12}%2~%f %# %b'
+PROMPT='%B${vcs_info_msg_0_}%b%F{143}%2~%f %# '
 # rprompt is located on the right side of the terminal
 RPROMPT='%(?..%F{red}(%?%) %f)%n@%m'
