@@ -36,6 +36,9 @@ source "$ZPLUGS/zsh-nvm/zsh-nvm.plugin.zsh"
 # Aliases
 source "$XDG_CONFIG_HOME/.aliases"
 
+# homebrew
+eval $(/opt/homebrew/bin/brew shellenv)
+
 # Syntax highlighting
 # Must come last!
 source "$ZPLUGS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
