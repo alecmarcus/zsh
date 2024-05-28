@@ -1,0 +1,4 @@
+EXCLUDES="*.md LICENSE .gitignore .gitmodules .git"
+DOTFILES_DIRS="$HOME/zsh"
+HOSTNAME="P-MBP"
+COPY_ALWAYS="git_template/HEAD"

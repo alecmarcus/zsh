@@ -1,0 +1,45 @@
+# git
+
+alias gs='git status'
+alias ga='git add'
+alias gp='git push'
+alias gpo='git push origin'
+alias gb='git branch '
+alias gbm='git branch -m'
+alias gbd='git branch -D'
+alias gc='git commit'
+alias gcm='git commit -m'
+alias gd='git diff'
+alias gco='git checkout '
+alias gl='git log'
+alias glo='git log --pretty="oneline"'
+alias glol='git log --graph --oneline --decorate'
+alias gri='git rebase -i'
+alias unwrap='git reset --soft'
+alias gsu='git submodule update --recursive --remote'
+
+# ls
+
+alias ls='ls --color=auto'
+alias lsl='ls -l'
+alias ll='ls -lahF'
+alias lls='ls -lahFtr'
+alias la='ls -A'
+alias l='ls -CF'
+
+# see https://thevaluable.dev/zsh-install-configure-mouseless/
+alias d='dirs -v'
+for index ({0..9}) alias "$index"="cd +${index}"; unset index
+# Usage:
+# ~ > cd .config
+# ~/.config > cd devdash
+# ~/.config/devdash > cd ..
+# ~/.config > cd i3
+# ~/.config/i3 > cd ..
+# ~/.config > d
+# 0       ~/.config
+# 1       ~/.config/i3
+# 2       ~/.config/devdash
+# 3       ~
+# ~/.config > 2
+# ~/.config/devdash >
