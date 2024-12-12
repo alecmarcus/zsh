@@ -13,7 +13,7 @@ export PATH="$ANDROID_SDK/platform-tools:$PATH"
 
 # Editor
 export EDITOR="vim"
-export VISUAL="code"
+export VISUAL="zed"
 
 # yarn
 export PATH="$HOME/.yarn/bin:$XDG_CONFIG_HOME/.config/yarn/global/node_modules/.bin:$PATH"
@@ -66,3 +66,6 @@ export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
 
 # increase node's memory allocation
 export NODE_OPTIONS="--max-old-space-size=10000"
+
+# GPG signing
+export "GPG_TTY=/dev/ttys000"
