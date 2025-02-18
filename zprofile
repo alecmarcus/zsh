@@ -8,8 +8,10 @@ export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"
 export ZPLUGS="$HOME/.plugins"
 
 # Android
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 export ANDROID_SDK="$HOME/Library/Android/sdk"
-export PATH="$ANDROID_SDK/platform-tools:$PATH"
+export PATH="$PATH:$ANDROID_SDK/emulator"
+export PATH="$PATH:$ANDROID_SDK/platform-tools"
 
 # Editor
 export EDITOR="vim"
